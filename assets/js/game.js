@@ -181,17 +181,17 @@ var Game = function() {
 	addMessage('[Game] Game Engine Started');
 
 	var Buildings = {
-		house: { type: "housing", title: "Small House", description: "Provides housing for 6 colonists", researchRequired: false, research: "", cost: {wood: 20, stone: 25}, capacity: 6, workers: 0, generates: {} },
-		woodshack: { type: "production", title: "Wood Shack", description: "Lumberjacks generate wood here", researchRequired: false, research: "", cost: {wood: 5, stone: 15}, capacity: 0, workers: 2, generates: {wood: 2} },
-		farm: { type: "production", title: "Farm", description: "Farms provide basic food", researchRequired: false, research: "", cost: {wood: 20, stone: 10}, capacity: 0, workers: 4, generates: {food: 2.5} },
-		ironmine: { type: "production", title: "Iron Rich Quarry", description: "Quarries provide ores and stone", researchRequired: false, research: "", cost: {wood: 15, stone: 5}, capacity: 0, workers: 3, generates: {ironore: 0.25, stone: 0.5} },
-		charcoalkiln: { type: "refining", title: "Charcoal Kiln", description: "Turns wood to charcoal", researchRequired: true, research: "charcoalsmelting", cost: {wood: 20, stone: 15}, capacity: 0, workers: 2, generates: {wood: -1, charcoal: 0.5} },
-		ironforge: { type: "refining", title: "Iron Forge", description: "Refines iron ore into iron ingots", researchRequired: true, research: "ironsmelting", cost: {wood: 10, stone: 35}, capacity: 0, workers: 3, generates: {ironore: -0.5, charcoal: -0.5, iron: 0.25} },
-		toolery: { type: "manufacturing", title: "Toolery", description: "Turns iron into tools", researchRequired: true, research: "toolmaking", cost: {wood: 150, stone: 50, iron: 20}, capacity: 0, workers: 3, generates: {iron: -0.5, tools: 0.25} },
-		lab: { type: "science", title: "Science Lab", description: "Progress your colony!", researchRequired: true, research: "scientificresearch", cost: {wood: 150, stone: 100, tools: 20}, capacity: 0, workers: 3, generates: {tools: -0.15, science: 0.5} },
-		goldmine: { type: "production", title: "Gold Mine", description: "Mine gold ore from gold rich veins", researchRequired: true, research: "goldmining", cost: {wood: 150, stone: 100, tools: 20}, capacity: 0, workers: 4, generates: {tools: -0.1, goldore: 0.2} },
-		goldforge: { type: "refining", title: "Gold Forge", description: "Refines gold ore into gold ingots", researchRequired: true, research: "goldsmelting", cost: {wood: 350, stone: 200, tools: 50}, capacity: 0, workers: 3, generates: {tools: -0.15, goldore: -0.2, gold: 0.1} },
-		mint: { type: "manufacturing", title: "Mint", description: "Convert gold to coins", researchRequired: true, research: "coinminting", cost: {wood: 350, stone: 200, tools: 50, gold: 20}, capacity: 0, workers: 3, generates: {gold: -0.1, coins: 0.2} },
+		house: { type: "housing", title: "Small House", description: "Provides housing for 6 colonists", researchRequired: false, research: "", cost: {wood: 0, stone: 0}, capacity: 2000, workers: 0, generates: {} },
+		woodshack: { type: "production", title: "Wood Shack", description: "Lumberjacks generate wood here", researchRequired: false, research: "", cost: {wood: 0, stone: 0}, capacity: 0, workers: 2, generates: {wood: 20000} },
+		farm: { type: "production", title: "Farm", description: "Farms provide basic food", researchRequired: false, research: "", cost: {wood: 20, stone: 10}, capacity: 0, workers: 4, generates: {food: 2500} },
+		ironmine: { type: "production", title: "Iron Rich Quarry", description: "Quarries provide ores and stone", researchRequired: false, research: "", cost: {wood: 0, stone: 0}, capacity: 0, workers: 3, generates: {ironore: 2500, stone: 50000} },
+		charcoalkiln: { type: "refining", title: "Charcoal Kiln", description: "Turns wood to charcoal", researchRequired: false, research: "charcoalsmelting", cost: {wood: 0, stone: 0}, capacity: 0, workers: 2, generates: {wood: 1, charcoal: 8} },
+		ironforge: { type: "refining", title: "Iron Forge", description: "Refines iron ore into iron ingots", researchRequired: false, research: "ironsmelting", cost: {wood: 0, stone: 0}, capacity: 0, workers: 3, generates: {ironore: 0.5, charcoal: 0.5, iron: 0.25} },
+		toolery: { type: "manufacturing", title: "Toolery", description: "Turns iron into tools", researchRequired: false, research: "toolmaking", cost: {wood: 0, stone: 0,iron: 0}, capacity: 0, workers: 3, generates: {iron: 0.5, tools: 0.25} },
+		lab: { type: "science", title: "Science Lab", description: "Progress your colony!", researchRequired: false, research: "scientificresearch", cost: {wood: 0, stone: 0}, capacity: 0, workers: 3, generates: {tools: 15, science: 20} },
+		goldmine: { type: "production", title: "Gold Mine", description: "Mine gold ore from gold rich veins", researchRequired: false, research: "goldmining", cost: {wood: 0, stone: 0}, capacity: 0, workers: 4, generates: {tools: 1, goldore: 0.2} },
+		goldforge: { type: "refining", title: "Gold Forge", description: "Refines gold ore into gold ingots", researchRequired: false, research: "goldsmelting", cost: {wood: 0, stone: 0}, capacity: 0, workers: 3, generates: {tools: 15, goldore: 2, gold: 0.1} },
+		mint: { type: "manufacturing", title: "Mint", description: "Convert gold to coins", researchRequired: false, research: "coinminting", cost: {wood: 0, stone: 0}, capacity: 0, workers: 3, generates: {gold: 100, coins: 200} },
 
 		// level 2 buildings
 		mill: { type: "production", title: "Mill", description: "Process food to increase yield", researchRequired: true, research: "milling", cost: {wood: 650, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, food: 2} },
