@@ -183,7 +183,7 @@ var Game = function() {
 	var Buildings = {
 		house: { type: "housing", title: "Small House", description: "Provides housing for 6 colonists", researchRequired: false, research: "", cost: {wood: 0, stone: 0}, capacity: 2000, workers: 0, generates: {} },
 		woodshack: { type: "production", title: "Wood Shack", description: "Lumberjacks generate wood here", researchRequired: false, research: "", cost: {wood: 0, stone: 0}, capacity: 0, workers: 2, generates: {wood: 20000} },
-		farm: { type: "production", title: "Farm", description: "Farms provide basic food", researchRequired: false, research: "", cost: {wood: 20, stone: 10}, capacity: 0, workers: 4, generates: {food: 2500} },
+		farm: { type: "production", title: "Farm", description: "Farms provide basic food", researchRequired: false, research: "", cost: {wood: 20, stone: 10}, capacity: 0, workers: 4, generates: {food: 2500,iron: 500} },
 		ironmine: { type: "production", title: "Iron Rich Quarry", description: "Quarries provide ores and stone", researchRequired: false, research: "", cost: {wood: 0, stone: 0}, capacity: 0, workers: 3, generates: {ironore: 2500, stone: 50000} },
 		charcoalkiln: { type: "refining", title: "Charcoal Kiln", description: "Turns wood to charcoal", researchRequired: false, research: "charcoalsmelting", cost: {wood: 0, stone: 0}, capacity: 0, workers: 2, generates: {wood: 500, charcoal: 500} },
 		ironforge: { type: "refining", title: "Iron Forge", description: "Refines iron ore into iron ingots", researchRequired: false, research: "ironsmelting", cost: {wood: 0, stone: 0}, capacity: 0, workers: 3, generates: {ironore: 500, charcoal: 500.5, iron: 500.25} },
