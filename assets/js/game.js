@@ -203,11 +203,11 @@ var Game = function() {
 	};
 
 		//level 3 buildings
-	   Textile Mill: { type: "production", title: "Textile Mill", description: "Farms Cotton.", researchRequired: true, research: "advancedmining", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, ironore: 1.5, stone: 0.1} },     Cotton Farm:{ Type: "production", title: "Cotton Farm description ¨ProduresearchRequired: true, research: "Cotton", cost: {wood: 650, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, food: 2} },
-		Textile Mill: { type: "production", title: "Textile Mill", description: "Spins Cotton to produce Texiles.", researchRequired: true, research: "advancedmining", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, ironore: 1.5, stone: 0.1} },
-		goldmine2: { type: "production", title: "Weaverś", description: "Weaves Textiles into Clothing", researchRequired: true, research: "advancedmining", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, gold: 0.8, stone: 0.1} },
-		mediumhouse: { type: "housing", title: "Medium House", description: "Provides housing for 10 colonists", researchRequired: true, research: "mediumhousing", cost: {wood: 200, stone: 250}, capacity: 10, workers: 0, generates: {} },
-		largehouse: { type: "housing", title: "Large House", description: "Provides housing for 16 colonists", researchRequired: true, research: "largehousing", cost: {wood: 400, stone: 500}, capacity: 16, workers: 0, generates: {} },
+	  	Textile Mill: { type: "", title: "", description: ".", researchRequired: true, research: "", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, ironore: 1.5, stone: 0.1} },     Cotton Farm:{ Type: "production", title: "Cotton Farm description ¨ProduresearchRequired: true, research: "Cotton", cost: {wood: 650, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, food: 2} },
+		Textile Mill: { type: "", title: "", description: ".", researchRequired: true, research: "", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, ironore: 1.5, stone: 0.1} },
+		goldmine2: { type: "", title: "", description: "", researchRequired: true, research: "", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, gold: 0.8, stone: 0.1} },
+		mediumhouse: { type: "", title: "", description: "", researchRequired: true, research: "", cost: {wood: 200, stone: 250}, capacity: 10, workers: 0, generates: {} },
+		largehouse: { type: "", title: "", description: "", researchRequired: true, research: "", cost: {wood: 400, stone: 500}, capacity: 16, workers: 0, generates: {} },
 
 	//var Resources = ["science", "wood", "stone", "food", "ironore", "iron", "tools", "charcoal", "goldore", "gold", "coins"];
 
