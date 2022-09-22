@@ -199,13 +199,11 @@ var Game = function() {
 		goldmine2: { type: "production", title: "Gold Shaft Mine", description: "A seam of gold glistens in the torchlight", researchRequired: true, research: "advancedmining", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, gold: 0.8, stone: 0.1} },
 		mediumhouse: { type: "housing", title: "Medium House", description: "Provides housing for 10 colonists", researchRequired: true, research: "mediumhousing", cost: {wood: 200, stone: 250}, capacity: 10, workers: 0, generates: {} },
 		largehouse: { type: "housing", title: "Large House", description: "Provides housing for 16 colonists", researchRequired: true, research: "largehousing", cost: {wood: 400, stone: 500}, capacity: 16, workers: 0, generates: {} },
-		
-	};
 
 		//level 3 buildings
-	  	Textile Mill: { type: "", title: "", description: ".", researchRequired: true, research: "", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, ironore: 1.5, stone: 0.1} },     Cotton Farm:{ Type: "production", title: "Cotton Farm description ¨ProduresearchRequired: true, research: "Cotton", cost: {wood: 650, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, food: 2} },
-		Textile Mill: { type: "", title: "", description: ".", researchRequired: true, research: "", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, ironore: 1.5, stone: 0.1} },
-		goldmine2: { type: "", title: "", description: "", researchRequired: true, research: "", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, gold: 0.8, stone: 0.1} },
+		Cotton Farm: { type: "Production", title ¨"", description: "Creates Cotton For Textiles" researchRequired: true, research: "", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, ironore: 1.5, stone: 0.1} },     Cotton Farm:{ Type: "production", title: "Cotton Farm description ¨ProduresearchRequired: true, research: "Cotton", cost: {wood: 650, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, food: 2} },
+		Textile Mill: { type: "", title: "", description: "Creates Textiles For Clothing", researchRequired: true, research: "", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, ironore: 1.5, stone: 0.1} },
+		Clothing Factory: { type: "", title: "", description: "Produces Clothing From Textiles", researchRequired: true, research: "clothingmaking", cost: {wood: 350, stone: 500, tools: 50}, capacity: 0, workers: 4, generates: {tools: -0.25, gold: 0.8, stone: 0.1} },
 		mediumhouse: { type: "", title: "", description: "", researchRequired: true, research: "", cost: {wood: 200, stone: 250}, capacity: 10, workers: 0, generates: {} },
 		largehouse: { type: "", title: "", description: "", researchRequired: true, research: "", cost: {wood: 400, stone: 500}, capacity: 16, workers: 0, generates: {} },
 
@@ -289,13 +287,25 @@ var Game = function() {
 			research: "",
 			baseValue: 0
 		},	
-			"Textiles": {
+			"textiles": {
 			title: "Textiles",
 			market: "True",
 			researchRequired: false,
 			research: "",
+			baseValue: 129
+	       	},	
+			"clothing": {
+			title: "Clothing",
+			market: "false",
+			researchRequired: false,
+			research: "",
 			baseValue: 0
-	        }
+		},		
+			title: "cotton",
+			market: "false",
+			researchRequired: false,
+			research: "",
+			baseValue: 0
 	}:
 
 	var Research = {
@@ -357,7 +367,8 @@ var Game = function() {
 		marketplace: { title: 'Unlock Marketplace', researchRequired: true, research: "coinminting", type: "unlock", cost: { coins: 1000, stone: 500}, bonuses: {} },
 		milling: { title: 'Unlock Mill', researchRequired: true, research: "buildinglevel2", type: "unlock", cost: { iron: 500, food: 1000, wood: 1000, coins: 500}, bonuses: {} },
 		advancedmining: { title: 'Unlock Advanced Mines', researchRequired: true, research: "buildinglevel2", type: "unlock", cost: { iron: 500, gold: 500, wood: 1000, coins: 500}, bonuses: {} },
-		
+		clothingproduction { title: 'unlock Clothing Production', researchRequired: true, research:"buidlinglevel3", type: "unlcok" cost: { iron: 500, tools: 500},bonuses: {} },
+	, 
 
 
 		buildinglevel2: { title: 'Unlock Level 2 Buildings', researchRequired: false, research: "", type: "unlock", cost: { iron: 1000, gold: 1000, tools: 1000, coins: 1000}, bonuses: {} },
